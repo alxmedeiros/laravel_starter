@@ -1,0 +1,2 @@
+[18-Jul-2018 00:45:53 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/alexandr/jose.alexandremedeiros.com.br/sistema/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[18-Jul-2018 01:19:06 UTC] PHP Fatal error:  Class 'Site\Http\Controllers\Admin\CrudController' not found in /home/alexandr/jose.alexandremedeiros.com.br/sistema/app/Http/Controllers/AdminsController.php on line 9

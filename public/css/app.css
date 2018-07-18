@@ -1,0 +1,35 @@
+#app {
+  height: 100%;
+}
+
+.site-menubar-body {
+  height: 100%;
+}
+
+.page-login-v2:before {
+  background-image: url("/images/admin/bg_login.jpg") !important;
+}
+
+.thumbnail-placeholder {
+  background-color: #e1e1e1;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+}
+
+.thumbnail-placeholder i {
+  font-size: 30px;
+  color: #0f0f0f;
+  margin: 100px auto;
+}
+
+.page-register-v3 .panel {
+  width: 800px;
+}
+
+@media (max-width: 520px) {
+  .page-register-v3 .panel {
+    width: 100%;
+  }
+}
+
