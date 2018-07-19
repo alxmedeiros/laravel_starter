@@ -19,8 +19,6 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
 
-			$table->integer('admin_id')->unsigned()->nullable();
-
             $table->tinyInteger('verified')->default(0);
             $table->string('email_token')->nullable();
 

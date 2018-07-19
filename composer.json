@@ -18,7 +18,8 @@
         "league/fractal": "^0.13.0@dev",
         "predis/predis": "^1.1",
         "prettus/l5-repository": "^2.6",
-        "prettus/laravel-validation": "1.1.*"
+        "prettus/laravel-validation": "1.1.*",
+        "nategood/httpful": "^0.2.20"
     },
     "require-dev": {
         "filp/whoops": "~2.0",

@@ -30,17 +30,6 @@ Route::get('/region/{region}/localities', function($region) {
 
 });
 
-Route::get('/company/{id}', function($id) {
-
-	$repository = app(\Site\Repositories\CompanyRepository::class);
-	$repository->setPresenter(\Site\Presenters\CompanyPresenter::class);
-
-	$company = $repository->find($id);
-
-	return response()->json($company);
-
-});
-
 Route::get('/cep/{postal_code}', function($postal_code) {
 
     $response = \Httpful\Request::get('https://viacep.com.br/ws/'.$postal_code.'/json/')
@@ -60,8 +49,4 @@ Route::get('/cep/{postal_code}', function($postal_code) {
         return response(isset($response->body->Message)?$response->body->Message:'Não encontrado', 400);
     }
 
-});
-
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
 });
